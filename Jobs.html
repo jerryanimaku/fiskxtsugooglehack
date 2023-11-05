@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companies Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            margin: 50px auto;
+            max-width: 1200px;
+        }
+
+        .job-listings-header {
+            background-color: #6D5CD9;
+            color: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px; /* Rounded the header */
+            text-align: center;
+            font-size: 24px;
+            width: fit-content;
+            margin: 0 auto 20px auto; /* Added margin to lower the header */
+        }
+
+        .horizontal-bar {
+            background-color: #FFFFFF;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            width: 800px; /* Adjusted width */
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden; /* Added to clear the floats */
+        }
+
+        .purple-bar {
+            background-color: #6D5CD9;
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .bar-text {
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+        }
+
+        .job-list-item {
+            list-style-type: none;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #000000;
+            border-radius: 10px; /* Added border-radius */
+        }
+
+        .job-list-item a {
+            text-decoration: none;
+            color: #6D5CD9;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+  <img id="options" src="options icon.png">
+  <br>
+  <h3 id="title">Work Visa Wizard</h3>
+  <form id="search" action="https://www.google.com/search" method="GET">
+    <input id="searchbox" type="text" name="q" placeholder="Search" class="search">
+  </form>
+    <div class="companies-container">
+
+        <!-- Job Listings Header -->
+        <div class="job-listings-header">
+            Job Listings
+        </div>
+
+        <!-- Horizontal Bar Container -->
+        <div class="horizontal-bar">
+            <div class="purple-bar"></div>
+            <div class="bar-text">List of Jobs</div>
+        </div>
+
+        <!-- List of Jobs -->
+        <ul class="job-list">
+            <ul class="job-list">
+            <li class="job-list-item">
+                <a href="https://careers.hpe.com/us/en/job/1160955/Product-Management-Graduate" class="job-list-item3">Product Manager New Grad 2024 - Hewlett Packard Enterprise - San Jose,CA</a>
+            </li>
+            <li class="job-list-item">
+                <a href="#">Software Engineering Intern - Google - New York,NY</a>
+            </li>
+            <li class="job-list-item">
+                <a href="#">2024 AI/ML Intern - Machine Learning Engineer _ Adobe - New York</a>
+            </li>
+        </ul>
+      <style>
+
+        #options {
+          position: fixed;
+          top: 0px;
+          left: 15px;
+          height: 54px;
+          width: 64px;
+        }
+
+        #title {
+          position: fixed;
+          top: 0px;
+          left: 83px;
+          color: rgba(109, 92, 217, 1);
+          font-size: 17px;
+        }
+
+        #search {
+          position: fixed;
+          top: 15px;
+          right: 10px;
+          background-color: rgba(109, 92, 217, 1);
+          color: rgba(109, 92, 217, 1);
+          padding: 10px;
+          border-radius: 25px;
+        }
+
+        #searchbox {
+          width: 180px;
+          height: 10px;
+          padding: 5px;
+          border: none;
+          border-radius: 5px;
+          outline: none;
+          background-color: rgba(109, 92, 217, 1);
+          color: white;
+        }
+        #searchbox::placeholder {
+          color: white; 
+        }
+      </style>
+          
+
+    </div>
+
+</body>
+</html>
