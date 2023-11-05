@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Company Login</title>
+  <style>
+    .popup {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      top: 35%;
+    }
+
+    .popup-content {
+      background-color: rgba(109, 92, 217, 1);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      color: white;
+      top: 35%;
+    }
+
+    input {
+      border: bold;
+      border-radius: 25px;
+      border-width: thin;
+      color: grey;
+      padding: 5px 10px;
+      margin: 5px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    .purple-semi-circle {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 56vh;
+      border-radius: 100% 100% 0 0;
+      background-color: rgba(109, 92, 217, 1);
+      z-index: -1;
+    }
+
+    #options {
+      position: fixed;
+      top: 0px;
+      left: 15px;
+      height: 54px;
+      width: 64px;
+    }
+
+    #title {
+      position: fixed;
+      top: 0px;
+      left: 83px;
+      color: rgba(109, 92, 217, 1);
+      font-size: 17px;
+    }
+
+    #search {
+      position: fixed;
+      top: 15px;
+      right: 10px;
+      background-color: rgba(109, 92, 217, 1);
+      color: rgba(109, 92, 217, 1);
+      padding: 10px;
+      border-radius: 25px;
+    }
+
+    #searchbox {
+      width: 180px;
+      height: 10px;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      background-color: rgba(109, 92, 217, 1);
+      color: white;
+    }
+    #searchbox::placeholder {
+      color: white; 
+    }
+    }
+  </style>
+</head>
+
+<body>
+  <img id="options" src="options icon.png">
+  <br>
+  <h3 id="title">Work Visa Wizard</h3>
+
+  <form id="search" action="https://www.google.com/search" method="GET">
+    <input id="searchbox" type="text" name="q" placeholder="Search" class="search">
+  </form>
+  <div id="popup-container" class="popup">
+    <div class="popup-content">
+
+      <h2>Company Login</h2>
+
+      <form action="Jobs.html" method="post">
+        <label for="companyName">Username:</label>
+        <br>
+        <input type="text" name="companyName" id="companyName" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <br>
+        <input type="password" name="password" id="password" required>
+        <br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+
+    </div>
+  </div>
+  <div class="purple-semi-circle"></div>
+</body>
+
+</html>
