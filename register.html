@@ -1,0 +1,60 @@
+<head>
+  <link rel="stylesheet" href="register_style.css">
+</head>
+<body>
+  <img id="options" src="options icon.png">
+  <br>
+<div class="popup-container">
+  <div class="popup-content">
+    <h2>Sign Up</h2>
+    <form action="" method="POST">
+      <label style="border-radius: 25px;" for="name">Name:</label>
+      <input type="text" name="name" id="name" required><br><br>
+
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="text" name="email" id="email" required><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" required><br><br>
+
+      <div class="option-container">
+        <input type="radio" id="student" name="userType" value="student">
+        <label for="student">Student</label>
+      </div>
+      <div class="option-container">
+        <input type="radio" id="employer" name="userType" value="employer">
+        <label for="employer">Employer</label>
+      </div>
+
+      <button id="SubmitButton">Submit</button>
+    </form>
+  </div>
+</div>
+
+                    <div class="purple-semi-circle"></div>
+
+                    <script>
+                      const submitButton = document.getElementById("SubmitButton");
+                      const studentRadio = document.getElementById("student");
+                      const employerRadio = document.getElementById("employer");
+
+                      // Add a click event listener to the submit button
+                      submitButton.addEventListener("click", function(event) {
+                        // Prevent the default form submission
+                        event.preventDefault();
+
+                        // Check which radio button is selected
+                        if (studentRadio.checked) {
+                          // Redirect to the student page
+                          window.location.href = "student_page.html";
+                        } else if (employerRadio.checked) {
+                          // Redirect to the employer page
+                          window.location.href = "Jobs.html";
+                        }
+                      });
+                    </script>
+
+</body>
