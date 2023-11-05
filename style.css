@@ -20,35 +20,87 @@ body {
 
 #title {
     position: fixed;
-    top: 0;
+    top: 25px;
     left: 50%;
     transform: translateX(-50%);
     color: rgba(109, 92, 217, 1);
+    font-size: 80px;
 }
 
-/* #mission {
-    color: black;
+#mission {
+    color: white;
+    font-size: 43px;
     font-weight: bold;
     text-align: center;
     position: fixed;
-    top: 50%;
+    top: 44%;
     bottom: 50%;
-    left: 50%;
-    right: 50%;
-    transform : translate(-50%, -50%);
-} */
+    left: 43%;
+    /* right: 50%; */
+    /* transform : translate(-50%, -50%); */
+}
+
+#paragraph {
+    color: white;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    position: fixed;
+    top: 47%;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+#paragraph {
+    color: white;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#paragraph:nth-child(4) {
+    top: 59%;    
+}
+
+#paragraph:nth-child(5) {
+    top: 65%;
+}
+
+#paragraph:nth-child(6) {
+    top: 71%;
+}
+
+#paragraph:nth-child(7) {
+    top: 77%;
+}
+
+#paragraph:nth-child(8) {
+    top: 83%;
+}
+
 
 #heading {
     position: fixed;
     left: 50%;
+    top: 164px;
     transform: translateX(-50%);
     color:rgba(109, 92, 217, 1);
+    font-size: 25px;
+    font-weight: normal;
 }
 
 #register {
     position: fixed;
     top: 15px;
-    right: 250px;
+    right: 230px;
     color: rgb(255, 255, 255);
     background-color:rgba(109, 92, 217, 1);
     border: none;
@@ -59,7 +111,7 @@ body {
 #login {
     position: fixed;
     top: 15px;
-    right: 350px;
+    right: 334px;
     color:rgb(255, 255, 255);
     background-color: rgba(109, 92, 217, 1);
     border: none;
@@ -69,8 +121,7 @@ body {
 
 form {
     position: fixed;
-    top: 10px;
-
+    top: 15px;
     right: 10px;
     background-color: rgba(109, 92, 217, 1);
     color: rgba(109, 92, 217, 1);
@@ -79,12 +130,14 @@ form {
 }
 
 input[type="text"] {
-    width: 200px;
+    width: 180px;
+    height: 10px;
     padding: 5px;
     border: none;
     border-radius: 5px;
     outline: none;
-    color:rgba(109, 92, 217, 1)
+    background-color: rgba(109, 92, 217, 1);
+    color: white;
 }
 
 .purple-semi-circle {
@@ -96,34 +149,16 @@ input[type="text"] {
     border-radius: 50% 50% 0 0;
     background-color: rgba(109, 92, 217, 1);
 }
-
-/* 
-.popup {
-    display: none;
+.purple-semi-circle {
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
+    height: 56vh;
+    border-radius: 50% 50% 0 0; /* Creates a semi-circle shape at the bottom */
+    background-color: rgba(109, 92, 217, 1);
 }
 
-.popup-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
+.search::placeholder {
+    color: white;
 }
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-} */
