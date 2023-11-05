@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Login</title>
+    <style>
+        h2 {
+            border: bold;
+            top: 15px;
+            border-radius: 20px;
+            border-width: thin;
+            color: grey;
+            padding: 8px 20px;
+            margin: 3px;
+            font-weight: bold;
+            background-color: rgba(109, 92, 217, 1);
+            position: center;
+            color: white;
+        }
+      
+        .popup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .popup-content {
+          background-color: rgba(109, 92, 217, 1);
+          padding: 20px;
+          border-radius: 10px;
+          text-align: center;
+          color: white;
+          top: 35%;
+        }
+
+        input {
+          border: bold;
+          border-radius: 25px;
+          border-width: thin;
+          color: grey;
+          padding: 5px 10px;
+          margin: 5px;
+
+        }
+
+        label {
+            border: bold;
+            border-radius: 25px;
+            border-width: thin;
+            color: grey;
+            padding: 5px 10px;
+            margin: 5px;
+            font-weight: bold;
+            background-color: rgba(109, 92, 217, 1);
+            color: white;
+        }
+
+        button {
+            background-color: rgba(109, 92, 217, 1);
+            color: white;
+            border: bold;
+            border-radius: 25px;
+            border-width: thin;
+            padding: 5px 10px;
+        }
+
+      #options {
+        position: fixed;
+        top: 0px;
+        left: 15px;
+        height: 54px;
+        width: 64px;
+      }
+
+      #title {
+        position: fixed;
+        top: 0px;
+        left: 83px;
+        color: rgba(109, 92, 217, 1);
+        font-size: 17px;
+      }
+
+      #search {
+        position: fixed;
+        top: 15px;
+        right: 10px;
+        background-color: rgba(109, 92, 217, 1);
+        color: rgba(109, 92, 217, 1);
+        padding: 10px;
+        border-radius: 25px;
+      }
+
+      #searchbox {
+        width: 180px;
+        height: 10px;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        background-color: rgba(109, 92, 217, 1);
+        color: white;
+      }
+      #searchbox::placeholder {
+        color: white; 
+      }
+
+      .purple-semi-circle {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 56vh;
+        border-radius: 100% 100% 0 0;
+        background-color: rgba(109, 92, 217, 1);
+        z-index: -1;
+      }
+    </style>
+</head>
+
+<body>
+  <img id="options" src="options icon.png">
+  <br>
+  <h3 id="title">Work Visa Wizard</h3>
+  <form id="search" action="https://www.google.com/search" method="GET">
+    <input id="searchbox" type="text" name="q" placeholder="Search" class="search">
+  </form>
+    <div id="popup-container" class="popup">
+        <div class="popup-content">
+            <h2 for="Student Login">Student Login</h2>
+
+                <form id="login-form">
+                    
+                    <label for="Name">Username:</label>
+                    <br>
+                    <input type="text" name="Name" id="Name" required>
+                    <br><br>
+
+                    <label for="password">Password:</label>
+                    <br>
+                    <input type="password" name="password" id="password" required>
+                    <br><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+        </div>
+    </div>
+    <script>
+        // Hardcoded default username and password (not secure for production)
+        const defaultUsername = "jamo_unite";
+        const defaultPassword = "jamo23";
+
+        // Add an event listener to the form for submission
+        document.getElementById('login-form').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent the form from submitting and refreshing the page
+
+            // Get the input values
+            const username = document.getElementById('Name').value;
+            const password = document.getElementById('password').value;
+
+            // Perform validation and authentication
+            if (username === defaultUsername && password === defaultPassword) {
+                alert('Login successful!');
+                window.location.href = 'Jobs.html';
+            } else {
+                alert('Login failed. Please check your username and password.');
+            }
+        });
+    </script>
+  <div class="purple-semi-circle"></div>
+</body>
+
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="student.css">
+    </head>
+<!-- <div id="popup-container" class="popup">
+    <div class="popup-content">
+    <body> -->
+<!-- <h2>Student Login</h2>
+        <p>Name</p>
+        <div class="name-button-container">
+            <label for="name"></label>
+            <input style="border: dotted; border-radius:5px; border-width: thin;" type="text" name="name" id="name"
+                required><br><br>
+            <p>Username</p>
+            <div class="username-button-container">
+                <label for="username"></label>
+                <input style="border: dotted; border-radius:5px; border-width: thin;" type="text" name="username"
+                    id="username" required><br><br>
+                <p>Email</p>
+                <div class="Email-button-container">
+                    <label for="Email"></label>
+                    <input style="border: dotted; border-radius:5px; border-width: thin;" type="text" name="Email"
+                        id="Email" required><br><br>
+                    <p>Password</p>
+                    <div class="password-button-container">
+                        <label for="password"></label>
+                        <input style="border: dotted; border-radius:5px; border-width: thin;" type="text" name="password"
+                            id="password" required><br><br>
+
+                <button id="Submit Button">Submit</button>
+            </div>
+                    </body>
+                    </html> -->
