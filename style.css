@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#options {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    height: 54px;
+    width: 64px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#title {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(109, 92, 217, 1);
+}
+
+/* #mission {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    transform : translate(-50%, -50%);
+} */
+
+#heading {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    color:rgba(109, 92, 217, 1);
+}
+
+#register {
+    position: fixed;
+    top: 15px;
+    right: 250px;
+    color: rgb(255, 255, 255);
+    background-color:rgba(109, 92, 217, 1);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+#login {
+    position: fixed;
+    top: 15px;
+    right: 350px;
+    color:rgb(255, 255, 255);
+    background-color: rgba(109, 92, 217, 1);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+form {
+    position: fixed;
+    top: 10px;
+
+    right: 10px;
+    background-color: rgba(109, 92, 217, 1);
+    color: rgba(109, 92, 217, 1);
+    padding: 10px;
+    border-radius: 25px;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color:rgba(109, 92, 217, 1)
+}
+
+.purple-semi-circle {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 56vh;
+    border-radius: 50% 50% 0 0;
+    background-color: rgba(109, 92, 217, 1);
+}
+
+/* 
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+} */
