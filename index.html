@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="script.js"></script>
@@ -14,7 +15,13 @@
         <p id="heading">The Future of Job Search</p>
         <div class="button-container">
             <div id="register">Register</div>
-            <div id="login">Log in</div>
+            <div class="dropdown">
+                <button class="dropbutton">Login</button>
+                <div class="dropdown-content">
+                    <a href="student_login.html">Student Login</a>
+                    <a href="employer_login.html">Employer Login</a>
+                </div>
+            </div>
             <form action="https://www.google.com/search" method="GET">
                 <input type="text" name="q" placeholder="Search" class="search">
             </form>
@@ -31,3 +38,5 @@
     </p>
 </body>
 </html>
+
+
